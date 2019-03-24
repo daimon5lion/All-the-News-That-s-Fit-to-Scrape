@@ -1,5 +1,5 @@
-const mongoose = require('mongoose'),
-      uniqueValidator = require('mongoose-unique-validator');
+const mongoose = require("mongoose"),
+  uniqueValidator = require("mongoose-unique-validator");
 
 // create Schema class
 const Schema = mongoose.Schema;
@@ -24,5 +24,4 @@ NoteSchema.plugin(uniqueValidator);
 // create the Note model with the NoteSchema
 const Note = mongoose.model("Note", NoteSchema);
 
-// export the model
 module.exports = Note;

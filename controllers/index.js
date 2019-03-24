@@ -1,8 +1,5 @@
 'use strict';
 
-
-// dependencies
-// =============================================================
 const express = require('express'),
       router = express.Router(),
       Article = require('../models/article');
